@@ -17,10 +17,8 @@ import datetime
 import os
 import copy
 import time
-from EMF_GNN import HFGNN, MFGNN
-from MF_GNN_DC import MFGNN_DC
-from LF_GNN import LFGNN
-from utils import *
+from ..gnns import HFGNN, MFGNN, MFGNN_DC, LFGNN
+from .utils import *
 
 
 
@@ -592,7 +590,7 @@ def evaluate_particle(particle, violation_costs, HF_model, LF_model, MF_model, a
         
         constraints_for_hybrid = np.where(np.abs(violated_prob_proximity) <= 0.035)[0]
 
-        if constraints_for_hybrid.shape[0] > 0 and analysis == 'surrogate':
+        if constraints_for_hybrid.shape[0] > 0 and analysis != 'pp':
             for idx in constraints_for_hybrid:
                 active_distances = np.abs(all_distances[:, idx])
                 active_threshold = distances_threshold[idx]
@@ -776,7 +774,7 @@ def parse_arguments():
 
     parser.add_argument('--case', type=str, default='case118',
                         help='IEEE test case to use (e.g., "case118" for the 118-bus test system)')
-    parser.add_argument('--model_dir', type=str, default='../MFGNN/results',
+    parser.add_argument('--model_dir', type=str, default='../gnns/results',
                         help='Directory where the trained models are stored')
     parser.add_argument('--scenario_dir', type=str, default='scenarios',
                         help='Directory where different scenarios are stored')
