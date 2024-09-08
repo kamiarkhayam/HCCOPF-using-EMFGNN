@@ -61,6 +61,6 @@ This project is open-sourced under the MIT License. See the LICENSE file for mor
 ## Citation
 If you use this code or the framework in your research, please cite our papers:
 
-> Khayambashi, Kamiar, Md Abul Hasnat, and Negin Alemazkoor. "Hybrid Chance-Constrained Optimal Power Flow under Load and Renewable Generation Uncertainty using Enhanced Multi-Fidelity Graph Neural Networks." Journal of Machine Learning for Modeling and Computing, vol. 1, no. 1, Jan. 2024, doi:10.1615/JMachLearnModelComput.2024054885.
+> Khayambashi, K., Hasnat, M. A., & Alemazkoor, N. (2024). HYBRID CHANCE-CONSTRAINED OPTIMAL POWER FLOW UNDER LOAD AND RENEWABLE GENERATION UNCERTAINTY USING ENHANCED MULTI-FIDELITY GRAPH NEURAL NETWORKS. Journal of Machine Learning for Modeling and Computing, 5(4).
 
-> Taghizadeh, Mehdi, Khayambashi, Kamiar, Hasnat, Md Abul, Alemazkoor, Negin. (2024). Multi-fidelity Graph Neural Networks for Efficient Power Flow Analysis under High-Dimensional Demand and Renewable Generation Uncertainty. [Under review].
+> Taghizadeh, M., Khayambashi, K., Hasnat, M. A., & Alemazkoor, N. (2024). Multi-fidelity graph neural networks for efficient power flow analysis under high-dimensional demand and renewable generation uncertainty. Electric Power Systems Research, 237, 111014.
